@@ -1,0 +1,67 @@
+/*
+La capa de presentación en una página web se puede implementar de forma externa,
+mediante un archivo, en dicho archivo se define toda la semántica para los estilos
+y desde el archivo html se hace referencia a él.
+*/
+
+/* Selector Universal */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    /* Fondo con degradado */
+    background-image: linear-gradient(to right, gray, black);
+    color: white;
+}
+
+div.contenedor{
+    width: 95%;
+    height: 100vh;
+    margin: 5px auto;
+}
+
+/* Menú de navegación */
+div nav{
+    height: 50px;
+    line-height: 50px;
+    padding-left: 50px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+div nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+/* Enlaces */
+div nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: tomato;
+}
+
+/* Contenido */
+div section{
+    padding: 30px;
+}
+
+div section p{
+    text-align: justify;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: yellow;
+}
+
+/* Títulos */
+h1, h2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: blue;
+}
